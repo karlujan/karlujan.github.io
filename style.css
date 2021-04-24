@@ -144,6 +144,11 @@ footer {
     color: #aaaaaa;
 }
 
+footer a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 700px) {
     .main-projects-container {
         flex-direction: column;

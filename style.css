@@ -33,6 +33,10 @@ a {
     text-decoration: none;
 }
 
+a:after {
+    color: #ffffff;
+}
+
 a:hover {
     cursor: pointer;
 }

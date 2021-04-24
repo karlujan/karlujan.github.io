@@ -27,6 +27,16 @@ nav {
     padding: 0.5rem;
 }
 
+a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
 nav a {
     font-size: 18px;
     color: #ffffff;

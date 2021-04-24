@@ -1,0 +1,23 @@
+body {
+    background: rgb(61, 78, 58);
+    color: rgb(133, 218, 49);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.pass-gen-main * {
+    padding: 1em;
+    margin: 1em;
+}
+h1 {
+    letter-spacing: 0.1em;
+}
+button {
+    background: rgb(133, 218, 49);
+    color: #333;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+}

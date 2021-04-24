@@ -19,10 +19,14 @@ box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
   margin-bottom: 2rem;
   padding: 0.4rem;
   width: 285px;
+  height: 3.5rem;
   border-radius: 16px;
   border: none;
   color: black;
   background: white;
+}
+#screen p {
+  overflow-x: scroll;
 }
 #buttons {
   height: 18rem;

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+        body{
+            font-family: 'Noto Sans JP', sans-serif;
+            width: 100vw;
+            background: rgb(235, 240, 255);
+        }
+
+        #myNav{
+            width: 100%;
+            padding: 16px;
+            text-align: center;
+            color: #333333;
+            background: #ffffff;
+            box-shadow: 0px 10px 10px 2px rgb(226, 226, 255);
+        }
+        .sticky {
+            top: 0;
+            width: 100vw;
+        }
+        .sticky + main {
+            padding-top: 100px;
+        }
+        #init{
+            margin: 20px auto;
+            width: 375px;
+            text-align: center;
+            border-radius: 20px;
+            background: #fff;
+            padding: 1em;
+            box-shadow: 0px 0px 10px 2px rgb(226, 226, 255);
+        }
+        input[type="text"]{
+            padding: 8px;
+            background: rgb(235, 237, 241);
+            border-radius: 30px;
+            border: none;
+            font-size: 16px;
+            width: 200px;
+        }
+        button{
+            padding:0.6em;
+            font-size: 14px;
+            color: #fff;
+            border-radius: 30px;
+            border: none;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        #init button {
+            background: #5a73ff;
+        }
+        input[type="checkbox"]{
+            width: 24px;
+        }
+        .remove{
+            background:#ff5e5e;
+        }
+        #list-container{
+            width: 375px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 16px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 2px rgb(226, 226, 255);
+            background: #fff;
+            margin: 1rem auto;
+            color: #333333;
+        }
+
+        .checkbox-container {
+            display: block;
+            position: relative;
+            transform: translateY(4px);
+            cursor: pointer;
+            user-select: none;
+        }
+        .checkbox-container input {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+        }
+        .checkmark-span {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background: #efefef;
+        }
+        .checkbox-container input:checked ~ .checkmark-span {
+            background: #65bb70;
+            transition: 1s ease;
+        }
+        .checkmark-span:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        .checkbox-container input:checked ~ .checkmark-span:after {
+            display: block;
+        }
+        .checkbox-container .checkmark-span:after {
+            left: 5px;
+            top: 2px;
+            width: 6px;
+            height: 10px;
+            border: solid #ffffff;
+            border-width: 0 4px 4px 0;
+            transform: rotate(45deg);
+        }

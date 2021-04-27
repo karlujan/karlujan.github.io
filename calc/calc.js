@@ -125,6 +125,7 @@ var zeroGo = zeroBtn.addEventListener("click", function () {
   document.getElementById("screen").innerText += "0";
 });
 
+/*
 var deciBtn = document.getElementById("decimal");
 var deciGo = deciBtn.addEventListener("click", function (){
   if (document.getElementById("screen").innerText == "0"){
@@ -132,6 +133,7 @@ var deciGo = deciBtn.addEventListener("click", function (){
   }
   document.getElementById("screen").innerText += ".";
 })
+*/
 
 
 var totalBtn = document.getElementById("=");
@@ -159,13 +161,13 @@ var totalGo = totalBtn.addEventListener("click", function () {
         z += x;
       }
       else if(operationsCounter < operations.length && operations[operationsCounter] == "-"){
-        z -= x;
+        z = z - x;
       }
       else if(operationsCounter < operations.length && operations[operationsCounter] == "/"){
-        z /= x;
+        z = z / x;
       }
       else if(operationsCounter < operations.length && operations[operationsCounter] == "*"){
-        z *= x;
+        z = z * x;
       }
 
     }

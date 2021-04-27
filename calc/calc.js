@@ -151,10 +151,10 @@ var totalGo = totalBtn.addEventListener("click", function () {
 
   var s1 = convertString.split(/[+-/*]/gi);
   
-  var z = 0;
+  var z = parseFloat(s1[0]);;
 
   function result() {
-    for(var i = 0; i < s1.length; i++){
+    for(var i = 1; i < s1.length; i++){
       var x = parseFloat(s1[i]);
       
       if(operationsCounter < operations.length && operations[operationsCounter] == "+"){
